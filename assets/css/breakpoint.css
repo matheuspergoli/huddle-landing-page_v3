@@ -33,3 +33,19 @@
         width: 1320px;
     }
 }
+
+/* INTRO SECTION */
+@media (max-width: 991px) {
+    #intro {
+        gap: 5rem;
+    }
+
+    #intro-wrapper > * {
+        margin: auto;
+        text-align: center;
+    }
+
+    #hero-img {
+        margin: auto;
+    }
+}
