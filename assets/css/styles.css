@@ -43,6 +43,7 @@ html {
 #header {
     padding-top: 2.5rem;
     padding-bottom: 5rem;
+    margin-bottom: 15rem;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,4 +139,58 @@ html {
 
 #hero-img > img {
     width: 100%;
+}
+
+/* FEATURES SECTIONS */
+#feature-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.features-title {
+    font-size: 4rem;
+}
+
+.img-wrapper {
+    max-width: 40rem;
+}
+
+.features-img {
+    display: block;
+    width: 100%;
+}
+
+.features-desc {
+    font-size: 2rem;
+    max-width: 55rem;
+}
+
+#grow-together, #flowing-conversations, #your-users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#grow-together, #flowing-conversations, #your-users > * {
+    flex: 1 1 15rem;
+}
+
+/* SECTION GROW TOGETHER */
+#grow-together {
+    
+}
+
+/* SECTION FLOWING CONVERSATIONS */
+#flowing-conversations {
+    
+}
+
+/* SECTION YOUR USERS */
+#your-users {
+    
 }
