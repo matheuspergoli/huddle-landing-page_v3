@@ -49,3 +49,10 @@
         margin: auto;
     }
 }
+
+/* FEATURES SECTIONS */
+@media (max-width: 768px) {
+    .features-title, .features-desc {
+        text-align: center;
+    }
+}
