@@ -5,6 +5,7 @@
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -145,7 +146,7 @@ html {
 #feature-section {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 #feature-section article {
@@ -186,4 +187,55 @@ html {
 
 #grow-together > *, #flowing-conversations > *, #your-users > * {
     flex: 1 1 25rem;
+}
+
+/* BUILD YOUR COMMUNITY SECTION */
+#build-community {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin: auto;
+    max-width: 80rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    padding: clamp(3rem, 5vw, 5rem);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#community-title {
+    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 3rem);
+}   
+
+#community-get-started {
+    display: block;
+    width: 100%;
+    margin: auto;
+    color: white;
+    max-width: 30rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3rem;
+    padding: 1.3rem 1.5rem;
+    transition-duration: 200ms;
+    background-color: var(--pink);
+    font-family: var(--font-poppins);
+    font-size: clamp(1rem, 5vw, 2rem);
+}
+
+#community-get-started:hover {
+    background-color: hsla(322, 100%, 66%, 60%);
+}
+
+/* SCROLL ANIMATION */
+.js-scroll {
+    opacity: 0;
+    transition-duration: 300ms;
+    transform: translate3d(-50px, 0, 0);
+}
+
+.js-scroll.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
